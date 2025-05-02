@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iintoo Registration</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f8fb;
+            display: flex;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .left {
+            flex: 1;
+            background: #1d3b72;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+        .right {
+            flex: 1;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        input[type="email"], input[type="tel"] {
+            width: 48%;
+            padding: 10px;
+            margin-right: 4%;
+            margin-bottom: 10px;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+        .radio-group input {
+            margin-right: 10px;
+        }
+        .checkbox {
+            margin-top: 10px;
+        }
+        button {
+            background-color: #2172e5;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 200px;
+            margin-top: 20px;
+        }
+        .social-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .social-buttons button {
+            flex: 1;
+            background-color: #3b5998;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .social-buttons button.linkedin {
+            background-color: #0077b5;
+        }
+        .separator {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        .separator::before, .separator::after {
+            content: "";
+            height: 1px;
+            width: 40%;
+            background: #ccc;
+            position: absolute;
+            top: 50%;
+        }
+        .separator::before {
+            left: 0;
+        }
+        .separator::after {
+            right: 0;
+        }
+        .separator span {
+            background: white;
+            padding: 0 10px;
+        }
+        label {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+           <img src=""
+        </div>
+        <div class="right">
+            <h2>Get iintoo it today</h2>
+            <p>There is no charge or obligation upon registration.</p>
+            
+            <div class="social-buttons">
+                <button>Register with Facebook</button>
+                <button class="linkedin">Register with LinkedIn</button>
+            </div>
+
+            <div class="separator"><span>OR</span></div>
+
+            <div class="form-group">
+                <input type="email" placeholder="Email" value="gus.goodwin@gmail.com">
+                <input type="tel" placeholder="Phone">
+            </div>
+
+            <div class="form-group">
+                <p>What type of investor are you?</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="investor" checked> Individual</label>
+                    <label><input type="radio" name="investor"> Business</label>
+                    <label><input type="radio" name="investor"> IRA</label>
+                    <label><input type="radio" name="investor"> Trust</label>
+                </div>
+                <textarea placeholder="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common." style="width: 100%; height: 60px; padding: 10px;"></textarea>
+            </div>
+
+            <div class="checkbox">
+                <label><input type="checkbox"> I agree to the terms and receiving notifications from iintoo <a href="#">View full terms</a></label>
+            </div>
+
+            <button>Create Account</button>
+        </div>
+    </div>
+</body>
+</html>
